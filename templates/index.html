@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter User Info</title>
+    <!-- Linking to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Linking to CSS in the static folder using Flask's url_for method -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Twitter User Info</h1>
+        </header>
+        
+        <section id="user-info" class="card">
+            <h2>User Info</h2>
+            <div id="user-info-content">
+                <!-- User info will be injected here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="recent-tweets" class="card">
+            <h2>Recent Tweets</h2>
+            <ul id="tweets-list">
+                <!-- Tweets will be injected here by JavaScript -->
+            </ul>
+        </section>
+    </div>
+    
+    <!-- Linking to JavaScript file in the static folder using Flask's url_for method -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

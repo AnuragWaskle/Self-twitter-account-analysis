@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #56CCF2, #2F80ED); /* Gradient Background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Container for all content */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+/* Header */
+header h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Card Styles for Info and Tweets */
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* User Info Section */
+#user-info-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #eee;
+}
+
+/* Tweets List */
+#tweets-list {
+    list-style: none;
+    padding: 0;
+}
+
+#tweets-list li {
+    background: #444;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #eee;
+    transition: all 0.3s ease;
+}
+
+#tweets-list li:hover {
+    background: #2F80ED;
+}
+
+/* User Info Icon and Info Styling */
+#user-info-content .info-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#user-info-content .info-item i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+#user-info-content .info-item span {
+    font-weight: bold;
+}
+
+/* Footer for Credits */
+footer {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    #user-info-content,
+    #tweets-list li {
+        font-size: 1rem;
+    }
+}

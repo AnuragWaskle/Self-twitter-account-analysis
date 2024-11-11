@@ -4,12 +4,12 @@ from main import get_user_info, get_recent_tweets
 app = Flask(__name__)
 
 # Replace with the Twitter username you want to analyze
-TWITTER_USERNAME = "NehaJoshi111270"  # Change this to your desired Twitter username
+TWITTER_USERNAME = "narendramodi"  # Change this to your desired Twitter username
 
 # Route for the main page (index.html)
 @app.route("/")
 def home():
-    return render_template("index.html")  # This should point to 'templates/index.html'
+    return render_template("index.html")  
 
 # API route to get user info
 @app.route("/api/user_info")
